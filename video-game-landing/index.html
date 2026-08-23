@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEON STRIKE — Video Game Landing Page</title>
+  <meta name="description" content="NEON STRIKE, un shooter cyberpunk de acción. Landing page hecha con Bootstrap." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#top">
+        <span class="brand-neon">NEON</span><span class="brand-white">STRIKE</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#features">Características</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="#trailer">Tráiler</a></li>
+          <li class="nav-item"><a class="nav-link" href="#requirements">Requisitos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#editions">Ediciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reseñas</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-neon btn-sm px-3" href="#editions">Comprar ahora</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero d-flex align-items-center">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative py-5">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-7">
+          <span class="badge badge-tag mb-3"><i class="bi bi-lightning-charge-fill"></i> Ya disponible</span>
+          <h1 class="hero-title mb-3">
+            ENTRA EN LA <span class="brand-neon">GUERRA</span><br> NEÓN DEL FUTURO
+          </h1>
+          <p class="hero-subtitle mb-4">
+            Un shooter cyberpunk de mundo abierto. Personaliza tu implante, domina las calles de Neo-Kaito
+            y sobrevive a la noche eterna. Un solo jugador no basta: forma tu escuadrón.
+          </p>
+          <div class="d-flex flex-wrap gap-3 mb-4">
+            <a href="#editions" class="btn btn-neon btn-lg px-4">
+              <i class="bi bi-controller me-2"></i>Jugar ahora
+            </a>
+            <a href="#trailer" class="btn btn-outline-light btn-lg px-4">
+              <i class="bi bi-play-circle me-2"></i>Ver tráiler
+            </a>
+          </div>
+          <div class="d-flex align-items-center gap-4 platform-icons">
+            <i class="bi bi-windows" title="Windows"></i>
+            <i class="bi bi-playstation" title="PlayStation"></i>
+            <i class="bi bi-xbox" title="Xbox"></i>
+            <i class="bi bi-nintendo-switch" title="Switch"></i>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-art">
+            <div class="hero-art-glow"></div>
+            <div class="hero-art-card">
+              <i class="bi bi-joystick"></i>
+              <p class="mb-0 mt-3 text-uppercase small letter-spacing">Neon Strike</p>
+              <p class="text-white-50 small mb-0">Cyberpunk Action RPG</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#features" class="scroll-down"><i class="bi bi-chevron-down"></i></a>
+  </header>
+
+  <!-- STATS STRIP -->
+  <section class="stats-strip">
+    <div class="container">
+      <div class="row text-center gy-4">
+        <div class="col-6 col-md-3">
+          <h3 class="stat-number">4.5M+</h3>
+          <p class="stat-label">Jugadores</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="stat-number">9.2</h3>
+          <p class="stat-label">Puntuación media</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="stat-number">120h</h3>
+          <p class="stat-label">Contenido</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <h3 class="stat-number">4</h3>
+          <p class="stat-label">Plataformas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Características</span>
+        <h2 class="section-title">Todo lo que necesitas para dominar la noche</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="bi bi-map"></i></div>
+            <h5>Mundo abierto</h5>
+            <p class="text-white-50">Explora Neo-Kaito, una ciudad viva con misiones dinámicas y secretos ocultos en cada esquina.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="bi bi-cpu"></i></div>
+            <h5>Implantes cibernéticos</h5>
+            <p class="text-white-50">Personaliza tu build con más de 50 implantes que cambian por completo tu estilo de juego.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="bi bi-people-fill"></i></div>
+            <h5>Cooperativo online</h5>
+            <p class="text-white-50">Forma un escuadrón de hasta 4 jugadores y enfréntate a los jefes más duros del juego.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="bi bi-controller"></i></div>
+            <h5>Combate táctico</h5>
+            <p class="text-white-50">Un sistema de combate rápido y táctico con armas, habilidades y combos encadenables.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section-padding bg-darker">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Galería</span>
+        <h2 class="section-title">Capturas del juego</h2>
+      </div>
+      <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 overflow-hidden">
+          <div class="carousel-item active">
+            <div class="gallery-slide gallery-1"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery-slide gallery-2"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="gallery-slide gallery-3"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <div class="row g-3 mt-1">
+        <div class="col-4"><div class="gallery-thumb gallery-1"></div></div>
+        <div class="col-4"><div class="gallery-thumb gallery-2"></div></div>
+        <div class="col-4"><div class="gallery-thumb gallery-3"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAILER -->
+  <section id="trailer" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Tráiler</span>
+        <h2 class="section-title">Mira el juego en acción</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="trailer-frame">
+            <button class="play-btn" type="button" aria-label="Reproducir tráiler">
+              <i class="bi bi-play-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM REQUIREMENTS -->
+  <section id="requirements" class="section-padding bg-darker">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Requisitos</span>
+        <h2 class="section-title">Requisitos del sistema (PC)</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <ul class="nav nav-pills justify-content-center mb-4" id="reqTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#min" type="button">Mínimos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#rec" type="button">Recomendados</button>
+            </li>
+          </ul>
+          <div class="tab-content requirements-card">
+            <div class="tab-pane fade show active" id="min">
+              <div class="row gy-3">
+                <div class="col-md-6"><i class="bi bi-cpu me-2"></i><strong>CPU:</strong> Intel i5-9600K</div>
+                <div class="col-md-6"><i class="bi bi-gpu-card me-2"></i><strong>GPU:</strong> GTX 1660</div>
+                <div class="col-md-6"><i class="bi bi-memory me-2"></i><strong>RAM:</strong> 8 GB</div>
+                <div class="col-md-6"><i class="bi bi-hdd me-2"></i><strong>Almacenamiento:</strong> 60 GB SSD</div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="rec">
+              <div class="row gy-3">
+                <div class="col-md-6"><i class="bi bi-cpu me-2"></i><strong>CPU:</strong> Intel i7-12700K</div>
+                <div class="col-md-6"><i class="bi bi-gpu-card me-2"></i><strong>GPU:</strong> RTX 3070</div>
+                <div class="col-md-6"><i class="bi bi-memory me-2"></i><strong>RAM:</strong> 16 GB</div>
+                <div class="col-md-6"><i class="bi bi-hdd me-2"></i><strong>Almacenamiento:</strong> 60 GB SSD NVMe</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITIONS / PRICING -->
+  <section id="editions" class="section-padding">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Ediciones</span>
+        <h2 class="section-title">Elige tu edición</h2>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="price-card h-100">
+            <h5 class="text-uppercase">Estándar</h5>
+            <div class="price-amount">39,99€</div>
+            <ul class="list-unstyled price-list">
+              <li><i class="bi bi-check2 text-success me-2"></i>Juego base</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Actualizaciones gratuitas</li>
+              <li><i class="bi bi-x-lg text-white-50 me-2"></i>Contenido exclusivo</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light w-100">Comprar</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="price-card price-card-featured h-100">
+            <span class="badge badge-tag mb-2">Más popular</span>
+            <h5 class="text-uppercase">Deluxe</h5>
+            <div class="price-amount">59,99€</div>
+            <ul class="list-unstyled price-list">
+              <li><i class="bi bi-check2 text-success me-2"></i>Juego base</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Pack de implantes exclusivo</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Banda sonora digital</li>
+            </ul>
+            <a href="#" class="btn btn-neon w-100">Comprar</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="price-card h-100">
+            <h5 class="text-uppercase">Ultimate</h5>
+            <div class="price-amount">79,99€</div>
+            <ul class="list-unstyled price-list">
+              <li><i class="bi bi-check2 text-success me-2"></i>Todo lo de Deluxe</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Pase de temporada</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>Acceso anticipado</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light w-100">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section-padding bg-darker">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="section-tag">Reseñas</span>
+        <h2 class="section-title">Lo que dice la crítica</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="review-card h-100">
+            <div class="mb-3 text-warning">★★★★★</div>
+            <p>"Una obra maestra del género cyberpunk. El combate se siente increíblemente satisfactorio."</p>
+            <p class="text-white-50 small mb-0">— GameZone</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card h-100">
+            <div class="mb-3 text-warning">★★★★★</div>
+            <p>"Neo-Kaito es una de las ciudades mejor construidas que he visto en un videojuego."</p>
+            <p class="text-white-50 small mb-0">— Pixel Press</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card h-100">
+            <div class="mb-3 text-warning">★★★★☆</div>
+            <p>"El cooperativo eleva la experiencia a otro nivel. Imprescindible con amigos."</p>
+            <p class="text-white-50 small mb-0">— Arcade Weekly</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER CTA -->
+  <section class="newsletter-section">
+    <div class="container text-center">
+      <h2 class="section-title mb-3">No te pierdas nada</h2>
+      <p class="text-white-50 mb-4">Suscríbete y recibe noticias, ofertas y contenido exclusivo de Neon Strike.</p>
+      <form class="row justify-content-center g-2" onsubmit="return false;">
+        <div class="col-auto">
+          <input type="email" class="form-control form-control-lg newsletter-input" placeholder="tu@email.com" required>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-neon btn-lg">Suscribirme</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-md-4">
+          <a class="navbar-brand" href="#top">
+            <span class="brand-neon">NEON</span><span class="brand-white">STRIKE</span>
+          </a>
+          <p class="text-white-50 small mt-2 mb-0">© 2026 Neon Strike Studios. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#top" class="text-white-50 mx-2">Inicio</a>
+          <a href="#features" class="text-white-50 mx-2">Características</a>
+          <a href="#editions" class="text-white-50 mx-2">Ediciones</a>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex justify-content-md-end justify-content-center gap-3 fs-5">
+            <a href="#" class="text-white-50"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-discord"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-white-50"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
